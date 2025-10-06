@@ -1,0 +1,181 @@
+@font-face {
+    font-family: Inter;
+    src: url(../fonts/static/Inter-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    padding: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    list-style-type: none;
+    justify-content: space-between;
+    width: 40%;
+}
+
+#menu {
+    display: none;
+}
+
+#openmenu {
+    display: none;
+}
+
+#openmenu:checked~ul {
+    display: flex;
+}
+
+
+#openmenu:not(:checked)~label>img {
+    content: url(/assets/images/icon-menu.svg);
+}
+
+.section1 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.section1 img {
+    margin-bottom: 1rem;
+}
+
+.section1 h1,
+p {
+    margin-bottom: 1rem;
+}
+
+.section1 button {
+    margin-bottom: 2rem;
+    padding: .7rem;
+    width: 9rem;
+    border: none;
+    color: hsl(36, 100%, 99%);
+    background-color: hsl(5, 85%, 63%);
+}
+
+.section2 {
+    background-color: hsl(240, 100%, 5%);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.section2 h2 {
+    color: hsl(35, 77%, 62%);
+    margin-bottom: 1rem;
+}
+
+.section2 h3 {
+    color: hsl(36, 100%, 99%);
+    margin-bottom: 1rem;
+}
+
+.section2 p,
+hr {
+    color: hsl(233, 8%, 79%);
+    margin-bottom: 1rem;
+}
+
+.section3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.card img {
+    width: 5rem;
+    height: 100%;
+}
+
+.cardtext {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+}
+
+.card :nth-child(1) {
+    color: hsl(233, 8%, 79%);
+    font-size: 1.5rem;
+}
+.card :nth-child(3) {
+    color: hsl(233, 8%, 79%);
+    
+}
+
+@media screen and (min-width:576px) {
+    body {
+        margin-top: 3rem;
+        margin-left: 7rem;
+        margin-right: 7rem;
+    }
+
+    .section1 {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 65%;
+    }
+
+    .section1 img {
+        content: url(/assets/images/image-web-3-desktop.jpg);
+    }
+
+    .section1text {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .section1titre {
+        width: 50%;
+    }
+
+
+    .section1soustext {
+        width: 50%;
+        margin-right: 1rem;
+    }
+
+    .section2 {
+    width: 33%;
+    }
+
+    .section3 {
+        display: flex;
+        flex-direction: row;
+        margin-top: 1rem;
+    }
+
+    .card {
+        width: 33.33%;
+    }
+    .sectiondouble{
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
